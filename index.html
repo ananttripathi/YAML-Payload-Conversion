@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YAML to Python Converter</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/js-yaml/4.1.0/js-yaml.min.js"></script>
+</head>
+<body>
+    <div class="background-blobs">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+    </div>
+
+    <div class="container">
+        <header>
+            <h1>YAML <span class="arrow">→</span> Python</h1>
+            <p>Transform your configuration files instantly with premium precision.</p>
+        </header>
+
+        <main class="converter-grid">
+            <section class="pane input-pane">
+                <div class="pane-header">
+                    <h2>Input YAML</h2>
+                    <button id="clear-btn" class="icon-btn" title="Clear Input">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18"></path><path d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6"></path><path d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2"></path></svg>
+                    </button>
+                </div>
+                <textarea id="yaml-input" placeholder="Paste your YAML here..." spellcheck="false"></textarea>
+            </section>
+
+            <section class="pane output-pane">
+                <div class="pane-header">
+                    <h2>Python Output</h2>
+                    <button id="copy-btn" class="icon-btn" title="Copy Output">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                    </button>
+                </div>
+                <textarea id="python-output" readonly placeholder="Python code will appear here..." spellcheck="false"></textarea>
+            </section>
+        </main>
+
+        <div class="actions">
+            <button id="convert-btn" class="primary-btn">Convert Now</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
