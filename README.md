@@ -49,3 +49,13 @@ You can easily host this on [GitHub Pages](https://pages.github.com/) or [Netlif
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+---
+
+### GitHub Repository Details
+
+**Description:**
+A premium, client-side web application that instantly converts YAML configurations into Python variable assignments with a modern glassmorphism UI.
+
+**Topics:**
+yaml, python, converter, web-app, glassmorphism, developer-tools, configuration-management, static-site, js-yaml, open-source
