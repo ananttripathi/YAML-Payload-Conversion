@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const convertBtn = document.getElementById('convert-btn');
     const clearBtn = document.getElementById('clear-btn');
     const copyBtn = document.getElementById('copy-btn');
+    const downloadBtn = document.getElementById('download-btn');
 
     // Auto-convert on typing (with debounce)
     let timeout = null;
@@ -18,6 +19,21 @@ document.addEventListener('DOMContentLoaded', () => {
         yamlInput.value = '';
         pythonOutput.value = '';
         yamlInput.focus();
+    });
+
+    downloadBtn.addEventListener('click', () => {
+        const content = pythonOutput.value;
+        if (!content) return;
+
+        const blob = new Blob([content], { type: 'text/x-python' });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = 'config.py';
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+        URL.revokeObjectURL(url);
     });
 
     copyBtn.addEventListener('click', () => {
