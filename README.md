@@ -2,8 +2,7 @@
 
 A premium, client-side web application that instantly converts YAML configurations into Python variable assignments. Designed with a modern glassmorphism aesthetic and built for efficiency.
 
-![App Interface](https://github.com/ananttripathi/YAML-Payload-Conversion/blob/main/app_screenshot.png?raw=true)
-*(Note: You might want to upload a screenshot to your repo and link it here, or use the one I captured)*
+![App Interface](app_screenshot.png)
 
 ## Features
 
