@@ -197,6 +197,8 @@ textarea {
     line-height: 1.5;
     resize: none;
     outline: none;
+    white-space: pre;
+    overflow-x: auto;
 }
 
 textarea::placeholder {
